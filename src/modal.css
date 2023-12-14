@@ -1,0 +1,474 @@
+.mpopup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fff;
+    margin: auto;
+    padding: 0;
+    width: 800px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    border-radius: 2px;
+}
+
+.modal-header {
+    padding: 18px 12px;
+    background-color: #F8F8F8;
+    color: #333;
+    border-bottom: 1px solid #e9ecef;
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+}
+
+
+.modal-header p {
+    font-family: Roboto, sans-serif, Arial;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    color: rgb(26, 153, 170);
+    text-align: center;
+}
+
+.modal-header span {
+    font-family: Roboto, sans-serif, Arial;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    color: #8c8c8c;
+    position: relative;
+    top: -5px;
+}
+
+.modal-header span:nth-child(3) {
+    color: #4BB8BB;
+    font-weight: bold;
+}
+
+.modal-body {
+    padding: 20px 12px;
+}
+
+.modal-footer {
+    padding: 8px;
+    background-color: #ffffff;
+    color: #333;
+    text-align: right;
+}
+
+.modal-header .close {
+    color: #888;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form-group .Meeting_details,
+.Meeting_emails {
+    margin-top: 23px;
+}
+
+.Meeting_name input {
+    font-family: Roboto, sans-serif, Arial;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    cursor: pointer;
+    color: rgb(203, 202, 202);
+    width: 100%;
+    font-style: italic;
+    border: none;
+    border-bottom: solid #1A99AA 2px;
+}
+
+.Meeting_name input,
+select:focus {
+    color: #000;
+    outline: none;
+}
+
+.Meeting_details select:focus {
+    color: #000;
+    outline: none;
+}
+
+.Meeting_emails input:focus {
+    color: #000;
+    outline: none;
+}
+
+
+.Meeting_details {
+    display: flex;
+}
+
+
+
+.Meeting_details input,
+select {
+    font-family: Roboto, sans-serif, Arial;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    line-height: 21px;
+    color: rgb(73, 80, 87);
+    width: auto;
+    font-style: italic;
+    border: none;
+    border-bottom: solid #1A99AA 2px;
+    flex: 1;
+    margin-left: 18px;
+}
+
+.Meeting_details input,
+select:nth-child(1) {
+    margin-left: 0px;
+}
+
+.Meeting_details input {
+    color: #CBCACA;
+    font-style: normal;
+}
+
+.Meeting_details input,
+select {
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+.Meeting_emails {
+    display: flex;
+    position: relative;
+    top: 15px;
+}
+
+.Meeting_emails input {
+    font-family: Roboto, sans-serif, Arial;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    color: #CBCACA;
+    width: 82%;
+    text-indent: 0px;
+    font-style: italic;
+    border: none;
+    border-bottom: solid #1A99AA 2px;
+
+}
+
+.Meeting_emails button {
+    font-family: Roboto, sans-serif, Arial;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    background-color: white;
+    color: #1A99AA;
+    border: solid #1A99AA 1px;
+    padding: 6px 17px;
+    margin-left: 8px;
+    border-radius: 30px;
+}
+
+.Meeting_emails button:hover {
+    color: white;
+    background-color: #1A99AA;
+}
+
+.Meeting_emails i {
+
+    margin-right: 5px;
+    color: white;
+    background-color: #1A99AA;
+    font-size: 8px;
+    border-radius: 50px;
+    font-weight: normal;
+    padding: 2px;
+}
+
+.meeting_card_tip p {
+    font-family: Roboto, sans-serif, Arial;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    color: #CBCACA;
+    position: relative;
+    top: 18px;
+}
+
+.modal-footer button {
+    color: white;
+    background-color: #1A99AA;
+    padding: 6px 16px;
+    position: relative;
+    top: -10px;
+    border: none;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+
+.recurrence_popup {
+    position: relative;
+    top: 20px;
+    display: none;
+    height: auto;
+    width: 100%;
+    border-top: solid #C5C5C5 1px;
+    border-bottom: solid #C5C5C5 1px;
+    background-color: #F8F8F8;
+    display: flex;
+
+
+}
+
+.recurrence_box1 {
+    margin: 15px;
+    width: 58%;
+    height: auto;
+    border-right: solid #8c8c8c 1px;
+    float: left;
+    padding-top:20px;
+    padding-bottom:30px;
+}
+
+
+
+
+.recurrence_box1 p {
+    font-family: Roboto, sans-serif, Arial;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    color: rgb(87, 90, 90);
+    display: inline-block;
+}
+
+.recurrenece_text {
+    margin-left: 15px;
+    font-family: Roboto, sans-serif, Arial;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: rgb(87, 90, 90);
+}
+
+
+.recurrenece_text input {
+    border: none;
+    border-bottom: solid #1A99AA 2px;
+    width: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+.recurrenece_text input:focus {
+    outline: none;
+}
+
+.week_day {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-family: Roboto, sans-serif, Arial;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: rgb(87, 90, 90);
+    margin-right: 55px;
+}
+
+.week_day input {
+    border: none;
+    border-bottom: solid #1A99AA 2px;
+    margin-right: 10px;
+    margin-left: 0px;
+}
+
+.recurrence_box2 {
+    width: 40%;
+    padding-top:20px;
+    padding-bottom:30px;
+}
+
+
+
+.recurrence_box2 p {
+    font-family: Roboto, sans-serif, Arial;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    color: rgb(87, 90, 90);
+}
+
+
+
+.ending_date_text,
+.ending_date {
+    font-family: Roboto, sans-serif, Arial;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: rgb(87, 90, 90);
+    margin-left: 10px;
+    margin-top: 3px;
+}
+
+.ending_date {
+
+    margin-top: 15px;
+    margin-left: 61px;
+}
+
+.radio_end_meeting input {
+    width: 140px;
+    border: none;
+    font-family: Roboto, sans-serif, Arial;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: rgb(150, 148, 148);
+    border-bottom: solid #1A99AA 2px;
+
+}
+
+.radio_end_meeting input:focus {
+    outline: none;
+}
+
+.radio_after_meeting input {
+    width: 30px;
+    border: none;
+    font-family: Roboto, sans-serif, Arial;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: rgb(150, 148, 148);
+    border-bottom: solid #1A99AA 2px;
+
+}
+
+
+
+
+@media screen and (min-width:480px) And (max-width:950px) {
+    .modal-content {
+        width: auto;
+    }
+
+    .Meeting_details {
+        display: block;
+    }
+
+    .Meeting_details input {
+        display: flex;
+        width: 100%;
+    }
+
+    .Meeting_details select {
+        display: flex;
+        width: 100%;
+        margin-left: 0px;
+
+    }
+
+    .Meeting_details .a1 {
+
+        display: flex;
+    }
+
+    .Meeting_details .a2 {
+        display: inline-block;
+    }
+
+    .form-group .Meeting_details select {
+        margin-top: 18px;
+    }
+
+    .Meeting_emails {
+        display: block;
+    }
+
+    .form-group .Meeting_emails input {
+        margin-top: 0px;
+        width: 100%;
+    }
+
+    .Meeting_emails button {
+        padding: 7px 18px;
+        margin: auto;
+        margin-top: 23px;
+        margin-left: 30%;
+    }
+
+    .meeting_card_tip p {
+        position: relative;
+        top: -38px;
+    }
+
+    .recurrence_box1 {
+        width: 100%;
+    }
+
+    .recurrenece_text input {
+        width: 22px;
+    }
+
+    .week_day {
+        width: 100%;
+        margin-left: 36px;
+    }
+
+
+
+}
+
+
+
+/* add animation effects */
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
