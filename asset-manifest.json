@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/meeting-cart/static/css/main.0e94bb2c.css",
+    "main.js": "/meeting-cart/static/js/main.f5123bbb.js",
+    "static/js/787.28cb0dcd.chunk.js": "/meeting-cart/static/js/787.28cb0dcd.chunk.js",
+    "index.html": "/meeting-cart/index.html",
+    "main.0e94bb2c.css.map": "/meeting-cart/static/css/main.0e94bb2c.css.map",
+    "main.f5123bbb.js.map": "/meeting-cart/static/js/main.f5123bbb.js.map",
+    "787.28cb0dcd.chunk.js.map": "/meeting-cart/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0e94bb2c.css",
+    "static/js/main.f5123bbb.js"
+  ]
+}
